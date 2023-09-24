@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .logo {
+            margin-top: -5px;
+        }
+
+        .Search {
+            border: 1px solid gainsboro;
+            border-radius: 50px;
+            width: 40%;
+            height: 30px;
+            margin-left: 17%;
+            color: grey;
+        }
+
+        .Searchtext {
+            padding-top: 5px;
+            margin-left: 5%;
+        }
+
+        .mike {
+            margin-top: -5px;
+            margin-left: 5px;
+        }
+
+        .button {
+            margin-top: -5px;
+        }
+
+        .bigvideo {
+            background-color: black;
+            width: 90%;
+            height: 600px;
+            margin: 20px;
+        }
+
+        .videoname {
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        .ndbox {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile {
+            margin-left: 20px;
+        }
+
+        .profilename {
+            font-size: 17px;
+            margin-bottom: 0;
+        }
+
+        .subnum {
+            margin-top: 0;
+            font-size: 12px;
+            color: grey;
+        }
+
+        .nosub {
+            display: flex;
+            border: 1px solid silver;
+            border-radius: 50px;
+            background-color: silver;
+            align-items: center;
+            padding: 5px 30px;
+            height: 30px;
+            margin-left: 20px;
+        }
+
+        .sub {
+            display: flex;
+            border: 1px solid black;
+            border-radius: 50px;
+            background-color: black;
+            align-items: center;
+            padding: 5px 30px;
+            height: 30px;
+            margin-left: 20px;
+            color: white;
+        }
+
+        .sub::after {
+            content: "중";
+        }
+
+        .sub::before {
+            content: "🔔";
+            margin-right: 5px;
+        }
+
+
+
+        .verymanybutton {
+            margin-right: 10%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+        .manybutton {
+            display: flex;
+        }
+
+
+        .button {
+            display: flex;
+        }
+
+        .first {
+            font-size: 15px;
+            border-radius: 50px 0px 0px 50px;
+            display: flex;
+            align-items: center;
+            background-color: whitesmoke;
+            padding: 5px 20px;
+            text-align: center;
+            transition: all 0.3s;
+            height: 30px;
+        }
+
+        .first:hover {
+            background-color: silver;
+        }
+
+        .first:active {
+            background-color: blue;
+            color: white;
+        }
+
+        .first2 {
+            display: flex;
+            align-items: center;
+        }
+
+        .first2:hover {
+            background-color: silver;
+        }
+
+        .first2 {
+            font-size: 15px;
+            border-radius: 50px 0px 0px 50px;
+            display: flex;
+            align-items: center;
+            background-color: blue;
+            padding: 5px 20px;
+            text-align: center;
+            transition: all 0.3s;
+            height: 30px;
+            color: white;
+        }
+
+        .first3 {
+            font-size: 15px;
+            border-left: 1px solid grey;
+            border-radius: 0px 50px 50px 0px;
+            display: flex;
+            align-items: center;
+            background-color: whitesmoke;
+            padding: 5px 20px;
+            text-align: center;
+            transition: all 0.3s;
+            height: 30px;
+        }
+
+        .first3:hover {
+            background-color: silver;
+        }
+
+        .first3:active {
+            background-color: blue;
+            color: white;
+        }
+
+        .first4 {
+            font-size: 15px;
+            border-left: 1px solid grey;
+            border-radius: 0px 50px 50px 0px;
+            display: flex;
+            align-items: center;
+            background-color: blue;
+            padding: 5px 20px;
+            text-align: center;
+            transition: all 0.3s;
+            height: 30px;
+        }
+
+        .first4:hover {
+            background-color: silver;
+            border: 1px sol silver;
+        }
+
+        .line {
+            border-right: 1px solid black;
+        }
+
+        .second {
+            border: 1px solid whitesmoke;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            background-color: whitesmoke;
+            text-align: center;
+            padding: 5px 30px;
+            height: 30px;
+            margin-left: 6px;
+            transition: all 0.3s;
+        }
+
+        .second:hover {
+            background-color: silver;
+        }
+
+        .second:active {
+            background-color: grey;
+        }
+
+        .third {
+            border: 1px solid whitesmoke;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            background-color: whitesmoke;
+            text-align: center;
+            padding: 5px 30px;
+            height: 30px;
+            margin-left: 10px;
+            transition: all 0.3s;
+        }
+
+
+        .third:hover {
+            background-color: silver;
+        }
+
+        .third:active {
+            background-color: grey;
+        }
+
+
+        .fourth {
+            border: 1px solid whitesmoke;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            background-color: whitesmoke;
+            text-align: center;
+            padding: 5px 30px;
+            height: 30px;
+            margin-left: 10px;
+            transition: all 0.3s;
+        }
+
+        .fourth:hover {
+            background-color: silver;
+        }
+
+        .fourth:active {
+            background-color: grey;
+        }
+
+        .fifth {
+            border: 1px solid whitesmoke;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            background-color: whitesmoke;
+            font-size: 15px;
+            text-align: center;
+            padding: 5px 15px;
+            height: 30px;
+            margin-left: 10px;
+            margin-right: 20px;
+            transition: all 0.3s;
+        }
+
+        .fifth:hover {
+            background-color: silver;
+        }
+
+        .fifth:active {
+            background-color: grey;
+        }
+
+        table {
+            margin-left: 20px;
+        }
+
+        .nextvideoname {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .nextprofilename {
+            align-items: center;
+            display: inline-block;
+            color: grey;
+            font-size: 20px;
+        }
+
+        .nextwatch {
+            color: grey;
+        }
+
+
+        .nextvideo {
+            width: 250px;
+            height: 150px;
+        }
+
+        .everynextvideo {
+            display: flex;
+            justify-content: end;
+        }
+
+        .middle {
+            width: 90%;
+        }
+
+        .bigmiddle {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <a href="https://www.youtube.com/">
+            <div class="logo"><img src="./img/youtube.png" width="117px" height="50px"></div>
+        </a>
+        <div class="Search">
+            <div class="Searchtext">검색</div>
+
+        </div>
+        <div class="mike"><img src="./img/마이크.png" width="40px" height="40px"></div>
+
+        <div class="button"><img src="./img/나머지 버튼.png" width="146" height="36"></div>
+    </div>
+
+    <div class="bigmiddle">
+
+        <div class="middle">
+            <div class="bigvideo"><iframe src="https://www.youtube.com/embed/QU9c0053UAU?si=3cwxJNXK6yYBtgwO"
+                    width="100%" height="600px"></iframe></div>
+
+
+            <div class="videoname">정국 (Jung Kook) 'Seven (feat. Latto)' Official Mv</div>
+            <div class="verymanybutton">
+                <div class="manybutton">
+                    <div class="profile">
+                        <img src="./img/user.png" width="40px" height="40px">
+                    </div>
+                    <div>
+                        <div class="profilename">none</div>
+                        <div class="subnum">구독자 5.65만명</div>
+                    </div>
+                    <div class="nosub" onclick="this.classList.toggle('nosub'); this.classList.toggle('sub')">
+                        구독
+                    </div>
+                </div>
+
+
+
+
+                <div class="button">
+                    <div class="first" onclick="this.classList.toggle('first'); this.classList.toggle('first2')">
+                        <div class="good">👍</div>
+                        <div class="goodnum">5.6천</div>
+                    </div>
+                    <div class="first3" onclick="this.classList.toggle('first'); this.classList.toggle('first4')">
+                        <div class="line"></div>
+                        <div class="bad">👎</div>
+                    </div>
+                    <div class="second">공유</div>
+
+                    <div class="third">
+                        <div class="text">오프러인 저장</div>
+                    </div>
+
+                    <div class="fourth">
+                        <div class="text">클립</div>
+                    </div>
+
+                    <div class="fifth">
+                        <div class="point">∙∙∙</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="everynextvideo">
+            <table>
+                <tr class="video">
+
+                    <td rowspan="3">
+                        <a href="https://www.youtube.com/watch?v=vyDjFVZgJoo">
+                            <img src="./img/hayya hayya.png" class="nextvideo">
+                        </a>
+                    </td>
+
+                    <td class="nextvideoname">HAYYA HAYYA</td>
+                </tr>
+                <tr>
+                    <td class="nextprofilename">FIFA</td>
+                </tr>
+                <tr>
+                    <td class="nextwatch">조회수 1.1억회</td>
+                </tr>
+                <tr class="video">
+
+                    <td rowspan="3">
+                        <a href="https://www.youtube.com/watch?v=tQ0yjYUFKAE">
+                            <img src="./img/peaches.png" class="nextvideo">
+                        </a>
+                    </td>
+
+                    <td class="nextvideoname">Peaches</td>
+                </tr>
+                <tr>
+                    <td class="nextprofilename">justin biber</td>
+                </tr>
+                <tr>
+                    <td class="nextwatch">조회수 5.8억회</td>
+                </tr>
+                <tr class="video">
+
+                    <td rowspan="3">
+                        <a href="https://www.youtube.com/watch?v=5Ejp7yFZxPM">
+                            <img src="./img/cupid.png" class="nextvideo">
+                        </a>
+                    </td>
+
+                    <td class="nextvideoname">CUPID</td>
+                </tr>
+                <tr>
+                    <td class="nextprofilename">7clouds</td>
+                </tr>
+                <tr>
+                    <td class="nextwatch">조회수 2193만회</td>
+                </tr>
+                <tr class="video">
+                    <td rowspan="3">
+                        <a href="https://www.youtube.com/watch?v=ArmDp-zijuc">
+                            <img src="./img/super shy.png" class="nextvideo">
+                        </a>
+                    </td>
+
+                    <td class="nextvideoname">SUPER SHY</td>
+                </tr>
+                <tr>
+                    <td class="nextprofilename">NEW JEANS</td>
+                </tr>
+                <tr>
+                    <td class="nextwatch">조회수 7809만회</td>
+                </tr>
+                <tr class="video">
+                    <td rowspan="3">
+                        <a href="https://www.youtube.com/watch?v=BMflM6t2XcU">
+                            <img src="./img/playlist.png" class="nextvideo">
+                        </a>
+                    </td>
+
+                    <td class="nextvideoname">PLAYLIST</td>
+                </tr>
+                <tr>
+                    <td class="nextprofilename">Lauv</td>
+                </tr>
+                <tr>
+                    <td class="nextwatch">조회수 1.2만회</td>
+                </tr>
+                <tr class="video">
+
+                    <td rowspan="3">
+                        <a href="https://www.youtube.com/watch?v=kTJczUoc26U">
+                            <img src="./img/stay.png" class="nextvideo">
+                        </a>
+                    </td>
+
+
+                    <td class="nextvideoname">STAY</td>
+                </tr>
+                <tr>
+                    <td class="nextprofilename">justin biber</td>
+                </tr>
+                <tr>
+                    <td class="nextwatch">7.9억회</td>
+                </tr>
+                <tr class="video">
+
+                    <td rowspan="3">
+                        <a href="https://www.youtube.com/watch?v=vyDjFVZgJoo">
+                            <img src="./img/hayya hayya.png" class="nextvideo">
+                        </a>
+                    </td>
+
+                    <td class="nextvideoname">HAYYA HAYYA</td>
+                </tr>
+                <tr>
+                    <td class="nextprofilename">FIFA</td>
+                </tr>
+                <tr>
+                    <td class="nextwatch">조회수 1.1억회</td>
+                </tr>
+                <tr class="video">
+
+                    <td rowspan="3">
+                        <a href="https://www.youtube.com/watch?v=vyDjFVZgJoo">
+                            <img src="./img/hayya hayya.png" class="nextvideo">
+                        </a>
+                    </td>
+
+                    <td class="nextvideoname">HAYYA HAYYA</td>
+                </tr>
+                <tr>
+                    <td class="nextprofilename">FIFA</td>
+                </tr>
+                <tr>
+                    <td class="nextwatch">조회수 1.1억회</td>
+                </tr>
+                <tr class="video">
+
+                    <td rowspan="3">
+                        <a href="https://www.youtube.com/watch?v=vyDjFVZgJoo">
+                            <img src="./img/hayya hayya.png" class="nextvideo">
+                        </a>
+                    </td>
+
+                    <td class="nextvideoname">HAYYA HAYYA</td>
+                </tr>
+                <tr>
+                    <td class="nextprofilename">FIFA</td>
+                </tr>
+                <tr>
+                    <td class="nextwatch">조회수 1.1억회</td>
+                </tr>
+                <tr class="video">
+
+                    <td rowspan="3">
+                        <a href="https://www.youtube.com/watch?v=vyDjFVZgJoo">
+                            <img src="./img/hayya hayya.png" class="nextvideo">
+                        </a>
+                    </td>
+
+                    <td class="nextvideoname">HAYYA HAYYA</td>
+                </tr>
+                <tr>
+                    <td class="nextprofilename">FIFA</td>
+                </tr>
+                <tr>
+                    <td class="nextwatch">조회수 1.1억회</td>
+                </tr>
+                <tr class="video">
+
+                    <td rowspan="3">
+                        <a href="https://www.youtube.com/watch?v=vyDjFVZgJoo">
+                            <img src="./img/hayya hayya.png" class="nextvideo">
+                        </a>
+                    </td>
+
+                    <td class="nextvideoname">HAYYA HAYYA</td>
+                </tr>
+                <tr>
+                    <td class="nextprofilename">FIFA</td>
+                </tr>
+                <tr>
+                    <td class="nextwatch">조회수 1.1억회</td>
+                </tr>
+                <tr class="video">
+
+                    <td rowspan="3">
+                        <a href="https://www.youtube.com/watch?v=vyDjFVZgJoo">
+                            <img src="./img/hayya hayya.png" class="nextvideo">
+                        </a>
+                    </td>
+
+                    <td class="nextvideoname">HAYYA HAYYA</td>
+                </tr>
+                <tr>
+                    <td class="nextprofilename">FIFA</td>
+                </tr>
+                <tr>
+                    <td class="nextwatch">조회수 1.1억회</td>
+                </tr>
+                <tr class="video">
+
+                    <td rowspan="3">
+                        <a href="https://www.youtube.com/watch?v=vyDjFVZgJoo">
+                            <img src="./img/hayya hayya.png" class="nextvideo">
+                        </a>
+                    </td>
+
+                    <td class="nextvideoname">HAYYA HAYYA</td>
+                </tr>
+                <tr>
+                    <td class="nextprofilename">FIFA</td>
+                </tr>
+                <tr>
+                    <td class="nextwatch">조회수 1.1억회</td>
+                </tr>
+                <tr class="video">
+
+                    <td rowspan="3">
+                        <a href="https://www.youtube.com/watch?v=vyDjFVZgJoo">
+                            <img src="./img/hayya hayya.png" class="nextvideo">
+                        </a>
+                    </td>
+
+                    <td class="nextvideoname">HAYYA HAYYA</td>
+                </tr>
+                <tr>
+                    <td class="nextprofilename">FIFA</td>
+                </tr>
+                <tr>
+                    <td class="nextwatch">조회수 1.1억회</td>
+                </tr>
+                <tr class="video">
+
+                    <td rowspan="3">
+                        <a href="https://www.youtube.com/watch?v=vyDjFVZgJoo">
+                            <img src="./img/hayya hayya.png" class="nextvideo">
+                        </a>
+                    </td>
+
+                    <td class="nextvideoname">HAYYA HAYYA</td>
+                </tr>
+                <tr>
+                    <td class="nextprofilename">FIFA</td>
+                </tr>
+                <tr>
+                    <td class="nextwatch">조회수 1.1억회</td>
+                </tr>
+                <tr class="video">
+
+                    <td rowspan="3">
+                        <a href="https://www.youtube.com/watch?v=vyDjFVZgJoo">
+                            <img src="./img/hayya hayya.png" class="nextvideo">
+                        </a>
+                    </td>
+
+                    <td class="nextvideoname">HAYYA HAYYA</td>
+                </tr>
+                <tr>
+                    <td class="nextprofilename">FIFA</td>
+                </tr>
+                <tr>
+                    <td class="nextwatch">조회수 1.1억회</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
